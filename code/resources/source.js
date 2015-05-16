@@ -93,17 +93,6 @@ $(document).ready(function()
 	
 		var pauseTimer2 = false;
 
-		var intervalTimer2 = setInterval(function () {
-			if(pauseTimer2 == false)
-			{
-				moveRight2();
-			}
-			else
-			{
-				pauseTimer2 = false;
-			}
-		}, 8000);
-
 		var slideCount2 = $('.blockslider ul li').length;
 		var slideWidth2 = $('.blockslider ul li').width();
 		var slideHeight2 = $('.blockslider ul li').height();
@@ -137,8 +126,6 @@ $(document).ready(function()
 			$('.blockslider ul li[data-id="' + id + '"]').addClass('selectedslide');
 			$('.sliderdata').slideUp();
 			$('.sliderdata[data-id="' + id + '"]').slideDown();
-			
-			$('.sliderdata[data-id="' + id + '"]').animatescroll({scrollSpeed:1000,easing:'easeOutQuart', padding:75});
 			
 			location.hash = id;
 		}
