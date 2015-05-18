@@ -1,6 +1,6 @@
 <?php 
 	$pagetitle = 'Home';
-	include './parts/header.php'; 
+	include './parts/ori_header.php'; 
 	include './resources/functions.php'; 
 ?>
 

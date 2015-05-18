@@ -36,29 +36,16 @@
 	?>
 </head>
 <body>
-	<nav class="navbar">
-		<div class="navbutton"></div>
-		<section class="inner">
-			<a href="home"><div class="navlogo"></div></a>
-		</section>
-		<div style="clear: both;"></div>
-	</nav>
-	<nav class="navside">
-		<ul>
-			<li>
-				<a class="navitem" href="home">Novo</a>
-			</li>
-			<li>
-				<a class="navitem" href="projects">Projects</a>
-			</li>
-			<li>
-				<a class="navitem" href="team">Team</a>
-			</li>
-			<li>
-				<a class="navitem" href="contact">Contact</a>
-			</li>
-		</ul>
-	</nav>
+	<header class="navbar">
+			<a href="index.php"><img class="logo" src="images/static/logo.png"></a>
+        <ul class="nav">
+            <li><a href="index.php">Novo</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="team">Team</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+	</header>
+
 	<?php
 		if(isset($_SESSION['state']) && $_SESSION['state'] != "")
 		{
