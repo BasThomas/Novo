@@ -210,7 +210,7 @@
 	{
 		position: relative;
 		max-width: 1080px;
-		padding: 0 2%;
+        width: 60%;
 		margin: 0 auto;
 	}
 	
@@ -366,27 +366,34 @@
 		height: 100px;
 		text-decoration: none;
 		cursor: pointer;
+        opacity: 0.3;
+        transition: 0.2s;
 	}
 
 	a.control_next:hover
 	{
     background-image: url(../images/static/arrowr.png);
+        opacity: 1;
+        transition: 0.2s;
 	}
 
 	a.control_prev:hover
 	{
     background-image: url(../images/static/arrowl.png);
+        opacity: 1;
+        transition: 0.2s;
 	}
 
 	a.control_prev
 	{
     background-image: url(../images/static/arrowlw.png);
     background-repeat: no-repeat;
+    left: 5%;
 	}
 
 	a.control_next
 	{
-		right: 0;
+		right: 5%;
 		background-image: url(../images/static/arrowrw.png);
 	}
 	
