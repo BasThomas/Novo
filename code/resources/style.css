@@ -121,6 +121,11 @@
 	{
 		content: "\e605";
 	}
+
+    *{
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;   
+    }
 	
 	
 /* --- Basic Layout --- */
@@ -190,7 +195,8 @@
 	
 	.container
 	{
-		position: absolute;
+/*		position: absolute;*/
+        position: relative;
 		overflow-x: hidden;
 		width: 100%;
 		margin: 4em 0 0;
@@ -227,13 +233,21 @@
 	
 	.bannertitlebox
 	{
-		position: absolute;
+		position: relative;
 		width: 100%;
-		padding: 40px 0;
+/*		padding: 40px 0;*/
+        height: 100%;
 		bottom: 0px;
 		background-color: rgba(37, 37, 37, 0.65);
 		color: #f1f1f1;
 	}
+
+    .vertical{
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 	
 	.bannertitle
 	{
@@ -243,6 +257,7 @@
 		font-size: 2.8em;
 		line-height: 0.7em;
 		font-weight: 100;
+        text-shadow: 2px 2px #000;
 	}
 	
 	.bannertext
@@ -252,6 +267,7 @@
 		font-size: 1.2em;
 		line-height: 1.4em;
 		font-weight: 100;
+        text-shadow: 2px 2px #000;
 	}
 	
 	.bannerlink
@@ -376,7 +392,9 @@
 	
 	.block
 	{
-		padding: 40px 0;
+		padding: 10em 0;
+        width: 70%;
+        margin: 0 auto;
 		background-color: #FFFFFF;
 	}
 	

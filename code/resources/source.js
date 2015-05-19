@@ -202,14 +202,7 @@ $(document).ready(function()
 			pauseTimer2 = true;
 			showSliderData($(this).data('id'));
 		});
-	
-	
-	/* --- Notification Handling --- */
-	
-		$(document).on('click', '.mailbutton', function () {
-			event.preventDefault();
-			$('#mailform').slideToggle().animatescroll({scrollSpeed:1000,easing:'easeOutQuart'});;
-		});
+
 		
 		
 	/* --- Miscellaneous Handling --- */

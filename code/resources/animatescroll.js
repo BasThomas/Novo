@@ -160,7 +160,7 @@
     // default options
     $.fn.animatescroll.defaults = {        
         easing:"swing",
-        scrollSpeed:800,
+        scrollSpeed:1000,
         padding:0,
         element:"html,body"
     };   
