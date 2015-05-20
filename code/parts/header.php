@@ -39,10 +39,9 @@
 	<header class="navbar">
 			<a href="index.php"><img class="logo" src="images/static/logo.png"></a>
         <ul class="nav">
-            <li><a href="index.php">Novo</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="team">Team</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="team.php">About us</a></li>
+            <li><a href="projects.php">Portfolio</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
 	</header>
 

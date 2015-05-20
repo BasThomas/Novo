@@ -4,16 +4,18 @@
 	include './resources/functions.php'; 
 ?>
 
-<section class="container">
-	<section class="fullbanner slider">
+<!--<section class="container">-->
+<!--	<section class="fullbanner slider">-->
+<!--
 		<a href="#" class="control_next"></a>
 		<a href="#" class="control_prev"></a>
+-->
 		<ul>
 
 			<?php
 				$con = mysqli_connect("localhost", "delta_website", "admin", "delta_website");
 
-				$query = "SELECT * FROM novo_project WHERE Featured = 1 LIMIT 0, 4";
+				$query = "SELECT * FROM novo_project WHERE Featured = 1 LIMIT 0, 1";
 				if (!mysqli_query($con,$query))
 				{
 					die('Error: ' . mysqli_error($con));
@@ -27,13 +29,12 @@
 				{
 					$title = stripslashes($row['Name']);
 					$description = charLimit(stripslashes($row['Description']), 250);
-					echo '<li style="background-image: url(images/project/' . $row['ProjectID'] . '.jpg);">
-								<div class="bannertitlebox"><div class="vertical">
-									<h1 class="inner bannertitle">' . $title . '</h1>
-									<p class="inner bannertext">
+					echo '<li class="homeimage" style="background-image: url(images/project/' . $row['ProjectID'] . '.jpg);">
+								<div class="bannertitlebox"><div class="homedescription">
+									<a class="homelink" href="project#' . $row['ProjectID'] . '"><h1 class="bannertitle">' . $title . '</h1>
+									<p class="bannertext">
 										' . $description . '
-										<a class="colorlink bannerlink" href="project#' . $row['ProjectID'] . '">Lees meer...</a>
-									</p>
+									</p></a>
                                     </div>
 								</div>
 							</li>';
@@ -43,7 +44,8 @@
 			?>
 
 		</ul>
-	</section>
+<!--	</section>-->
+<!--
 	<section class="block">
 			<h1 class="contenttitle">Wij zijn Novo.</h1>
 			<p class="contenttext">
@@ -51,5 +53,6 @@
 				We zitten op locatie bij de Fontys Hogescholen in Eindhoven, waar we ook werken aan innovatieve en nieuwe oplossingen die nog niet in de markt staan en alleen nog maar van kunnen dromen.
 			</p>
 	</section>
-</section>
+-->
+<!--</section>-->
 <?php include './parts/footer.php'; ?>
