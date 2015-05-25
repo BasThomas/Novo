@@ -5,7 +5,7 @@
 ?>
 
 <section class="container">
-	<section class="banner blockslider block">
+	<section class="banner blockslider teamblock">
 		<a href="#" class="control_next"></a>
 		<a href="#" class="control_prev"></a>
 		<div class="inner" style="max-width: 2030px; width: 100%;">
@@ -39,7 +39,7 @@
 		{
 			$name = stripslashes($row['Name']);
 			$quote = stripslashes($row['Description']);
-			echo '	<section class="block sliderdata" data-id="' . $row['EmployeeID'] . '">
+			echo '	<section class="teamblock sliderdata" data-id="' . $row['EmployeeID'] . '">
 						<div class="inner">
 							<figure class="profilephoto" style="background-image: url(images/member/' . $row['EmployeeID'] . '.jpg);"></figure>
 							<div class="profiledata">
@@ -78,7 +78,7 @@
 							<div style="clear: both;"></div>
 						</div>
 					</section>
-					<section class="block" style="display: none;"></section>';
+					<section class="teamblock" style="display: none;"></section>';
 		}
 		
 		@mysqli_close($conn);

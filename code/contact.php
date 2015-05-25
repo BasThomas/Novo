@@ -34,7 +34,7 @@
 			initialize();
 		</script>
 	</section>
-	<section class="block">
+	<section class="contactblock">
 		<div class="inner">
 			<h1 class="contenttitle">Neem contact op.</h1>
 			<p class="contenttext">

@@ -1,6 +1,8 @@
 <?php 
 	$pagetitle = 'Home';
+    echo "<div class='homeheader'>";
 	include './parts/header.php'; 
+    echo "</div>";
 	include './resources/functions.php'; 
 ?>
 

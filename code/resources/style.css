@@ -135,7 +135,7 @@
 
 	}
 	
-	.navbar
+	.homeheader .navbar
 	{
 		position: fixed;
 		z-index: 10000;
@@ -145,6 +145,18 @@
 		padding: 1em 6.6% 0;
 		overflow: hidden;
         background-color: transparent;
+		color: #f1f1f1 !important;  
+	}
+    .navbar
+	{
+		position: fixed;
+		z-index: 10000;
+        height: 60px;
+		top: 0;
+		width: 86.8%;
+		padding: 1em 6.6% 10px;
+		overflow: hidden;
+        background-color: #252525;
 		color: #f1f1f1 !important;  
 	}
 
@@ -429,6 +441,20 @@
 		color: #f1f1f1;
 	}
 	
+    .teamblock, .portfolioblock, .contactblock
+    {
+        padding: 40px 0;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+    }
+    
+    .teamblock:nth-child(odd), .portfolioblock:nth-child(odd), .contactblock:nth-child(odd)
+    {
+        background-color: #2C2C2C;
+		color: #f1f1f1;
+    }
+
 	.map
 	{
 		height: 300px;
