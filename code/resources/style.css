@@ -168,7 +168,7 @@
         display: inline-block;
         float: right;
         position: relative;
-        font-size: 1.3em;
+        font-size: 1em;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -252,7 +252,6 @@
 	{
 		position: relative;
 		width: 100%;
-/*		padding: 40px 0;*/
         height: 100%;
 		bottom: 0px;
 		background-color: rgba(0, 0, 0, 0.3);
