@@ -3,7 +3,9 @@
     $employee = $_POST['employeeSelector'];
     $project = $_POST['projectSelector'];
 
-    if($employee == "Select an employee"){ die('Employee selection error!');}
+    if($employee == "Select an employee") {
+        die('Employee selection error!');
+    }
 
     $con = mysqli_connect("localhost", "delta_website", "admin", "delta_website");
 

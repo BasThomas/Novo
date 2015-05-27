@@ -15,15 +15,18 @@ $(document).ready(function(){
             <table style="margin-left: auto; margin-right: auto;">
             <tr>
                 <td>
-                    <?php 
+                    <?php
                         $con = mysqli_connect("localhost", "delta_website", "admin", "delta_website");
 
                         $query = "SELECT ProjectID, Name, Description, StartDate, EndDate FROM novo_project";
-                        if (!mysqli_query($con,$query)){ die('Error: ' . mysqli_error($con)); }
-                        else{ $result = mysqli_query($con,$query); }
+                        if (!mysqli_query($con,$query)) {
+                            die('Error: ' . mysqli_error($con));
+                        } else {
+                            $result = mysqli_query($con,$query);
+                        }
 
                         echo "<select id='projects' name='projectSelector' size='12'>";
-                        while($current = mysqli_fetch_array($result)){
+                        while($current = mysqli_fetch_array($result)) {
                             echo "<option value='" . $current['ProjectID'] . "'"
                                  . "pname='" . $current['Name'] . "'"
                                  . "description='" . $current['Description'] . "'"

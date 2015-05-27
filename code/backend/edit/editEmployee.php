@@ -8,12 +8,12 @@ $email = $_POST['email'];
 $dob = $_POST['dob'];
 $description = mysqli_real_escape_string($con, $_POST['description']);
 
-$sql="UPDATE novo_employee
-      SET Name='" . $name . "', 
-      Email='" . $email . "', 
-      DoB='" . $dob . "', 
-      Description='" . $description . "' 
-      WHERE EmployeeID=" . $selector;
+$sql = "UPDATE novo_employee
+      	SET Name='" . $name . "', 
+      	Email='" . $email . "', 
+      	DoB='" . $dob . "', 
+      	Description='" . $description . "' 
+      	WHERE EmployeeID=" . $selector;
 
 if (!mysqli_query($con,$sql)) {
   die('Error: ' . mysqli_error($con));

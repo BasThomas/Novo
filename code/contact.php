@@ -1,7 +1,7 @@
-<?php 
+<?php
 	$pagetitle = 'Contact';
-	include './parts/header.php'; 
-	include './resources/functions.php'; 
+	include './parts/header.php';
+	include './resources/functions.php';
 ?>
 
 <section class="container">
@@ -30,7 +30,7 @@
 			    	title: "Novo"
 			 	});
 			}
-			
+
 			initialize();
 		</script>
 	</section>

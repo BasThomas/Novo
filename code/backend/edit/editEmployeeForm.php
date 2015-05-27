@@ -1,20 +1,20 @@
 <script>
 $(document).ready(function(){
     $("#employees").change(function(){
-     
+
         var id = $(this).find(":selected").val();
         var name = $(this).find(":selected").attr('ename');
         var email = $(this).find(":selected").attr('email');
         var dob = $(this).find(":selected").attr('dob');
         var description = $(this).find(":selected").attr('description');
-         
+
         $('#name').val(name);
         $('#email').val(email);
         $('#dob').val(dob);
         $('#description').val(description);
         $('#picture').attr("src", "../../images/member/" + id + ".jpg");
         $('#employee').val(id);
-        
+
     });
 });
 </script>
@@ -27,15 +27,18 @@ $(document).ready(function(){
             <table style="margin-left: auto; margin-right: auto;">
             <tr>
                 <td>
-                    <?php 
+                    <?php
                         $con = mysqli_connect("localhost", "delta_website", "admin", "delta_website");
 
                         $query = "SELECT EmployeeID, Name, Email, DoB, Description FROM novo_employee";
-                        if (!mysqli_query($con,$query)){ die('Error: ' . mysqli_error($con)); }
-                        else{ $result = mysqli_query($con,$query); }
+                        if (!mysqli_query($con,$query)) {
+                            die('Error: ' . mysqli_error($con));
+                        } else {
+                            $result = mysqli_query($con,$query);
+                        }
 
                         echo "<select id='employees' name='selector' size='12'>";
-                        while($current = mysqli_fetch_array($result)){
+                        while($current = mysqli_fetch_array($result)) {
                             echo "<option value='" . $current['EmployeeID'] . "'"
                                 . "email='" . $current['Email'] . "'"
                                 . "dob='" . $current['DoB'] . "'"
@@ -56,7 +59,7 @@ $(document).ready(function(){
             </table>
             <input name="submit" type="submit" value="Edit">
         </form>
-        
+
         <table id="uploading" style="margin-left: auto; margin-right: auto; margin-bottom: 20px;">
         <tr>
             <td>

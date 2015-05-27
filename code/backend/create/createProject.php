@@ -6,7 +6,7 @@ $description = $_POST['description'];
 $startdate = $_POST['startdate'];
 
 
-$sql="INSERT INTO novo_project (Name, Description, StartDate )
+$sql = "INSERT INTO novo_project (Name, Description, StartDate )
 VALUES ('$name', '$description', '$startdate')";
 
 if (!mysqli_query($con,$sql)) {

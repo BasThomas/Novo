@@ -7,12 +7,12 @@ $description = mysqli_real_escape_string($con, $_POST['description']);
 $startdate = $_POST['startdate'];
 $enddate = $_POST['enddate'];
 
-$sql="UPDATE novo_project
-      SET Name='" . $name . "', 
-      Description='" . $description . "', 
-      StartDate='" . $startdate . "', 
-      EndDate='" . $enddate . "' 
-      WHERE ProjectID=" . $selector;
+$sql = "UPDATE novo_project
+      	SET Name='" . $name . "',
+      	Description='" . $description . "',
+      	StartDate='" . $startdate . "',
+      	EndDate='" . $enddate . "'
+      	WHERE ProjectID=" . $selector;
 
 if (!mysqli_query($con,$sql)) {
   die('Error: ' . mysqli_error($con));

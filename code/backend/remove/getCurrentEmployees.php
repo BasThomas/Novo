@@ -5,17 +5,14 @@
             ON E.EmployeeID = W.EmployeeID
             WHERE W.ProjectID = '$currentProjectID' ";
 
-    if (!mysqli_query($con,$query))
-    {
+    if (!mysqli_query($con,$query)) {
         die('Error: ' . mysqli_error($con));
-    }
-    else
-    {
+    } else {
         $result = mysqli_query($con,$query);
-        
+
         echo "<select name='employeeSelector' size='12'>";
-        
-        while($currentEmployee = mysqli_fetch_array($result)){
+
+        while($currentEmployee = mysqli_fetch_array($result)) {
             echo "<option value='" . $currentEmployee['EmployeeID'] . "'"
                         . "email='" . $currentEmployee['Email'] . "'"
                         . "dob='" . $currentEmployee['DoB'] . "'"
@@ -23,7 +20,7 @@
                         . "description='" . $currentEmployee['Description'] . "'"
                         . ">" . $currentEmployee['Name'] . "</option>";
         }
-        
+
         echo "</select><br>";
     }
 

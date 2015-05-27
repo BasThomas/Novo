@@ -1,7 +1,7 @@
-<?php 
+<?php
 	$pagetitle = 'Home';
-	include './parts/header.php'; 
-	include './resources/functions.php'; 
+	include './parts/header.php';
+	include './resources/functions.php';
 ?>
 
 <section class="container">
@@ -28,7 +28,7 @@
 			      title:"Novo Team"
 			  });
 			}
-			
+
 			initialize();
 		</script>
 	</section>

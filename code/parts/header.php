@@ -1,16 +1,3 @@
-<!--
-	Novo Team Website
-		Novo Team is the name of the Fontys Hogeschool ICT's Delta class of 2014-2015's corporate identity. This website is it's showcase and defines its identity.
-	
-	Front-End:
-		Designed By: 
-			Stan Jansen, Caspar Neervoort, Joris van Oers, Fons Winters
-		Coded By: Caspar Neervoort
-	Back-End:
-		Coded By:
-			Márton Wéber
--->
-
 <!DOCTYPE html>
 <head>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' />

@@ -1,20 +1,20 @@
 <script>
 $(document).ready(function(){
     $("#projects").change(function(){
-     
+
         var id = $(this).find(":selected").val();
         var name = $(this).find(":selected").attr('pname');
         var description = $(this).find(":selected").attr('description');
         var startdate = $(this).find(":selected").attr('start');
         var enddate = $(this).find(":selected").attr('end');
-         
+
         $('#pname').val(name);
         $('#description').val(description);
         $('#start').val(startdate);
         $('#end').val(enddate);
         $('#picture').attr("src", "../../images/project/" + id + ".jpg");
         $('#project').val(id);
-         
+
     });
 });
 </script>
@@ -27,15 +27,18 @@ $(document).ready(function(){
             <table style="margin-left: auto; margin-right: auto;">
             <tr>
                 <td>
-                    <?php 
+                    <?php
                         $con = mysqli_connect("localhost", "delta_website", "admin", "delta_website");
 
                         $query = "SELECT ProjectID, Name, Description, StartDate, EndDate FROM novo_project";
-                        if (!mysqli_query($con,$query)){ die('Error: ' . mysqli_error($con)); }
-                        else{ $result = mysqli_query($con,$query); }
+                        if (!mysqli_query($con,$query)) {
+                            die('Error: ' . mysqli_error($con));
+                        } else {
+                            $result = mysqli_query($con,$query);
+                        }
 
                         echo "<select id='projects' name='selector' size='12'>";
-                        while($current = mysqli_fetch_array($result)){
+                        while($current = mysqli_fetch_array($result)) {
                             echo "<option value='" . $current['ProjectID'] . "'"
                                 . "pname='" . $current['Name'] . "'"
                                 . "description='" . $current['Description'] . "'"
@@ -56,7 +59,7 @@ $(document).ready(function(){
             </table>
             <input name="submit" type="submit" value="Edit">
         </form>
-        
+
         <table id="uploading" style="margin-left: auto; margin-right: auto; margin-bottom: 20px;">
         <tr>
             <td>

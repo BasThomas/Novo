@@ -12,7 +12,7 @@ body
     text-align: center;
     width: 350;
     height: 220;
-    
+
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 80; right: 0;
@@ -24,7 +24,7 @@ body
     height: 30px;
     margin-top: 2px;
     border: 1px solid #e5e5e5;
-    
+
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -51,11 +51,11 @@ body
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 10px;
-    
+
     border: 1px solid #e5e5e5;
     background: white;
     cursor: crosshair;
-    
+
     text-align: center;
 }
 
@@ -69,12 +69,12 @@ body
     display: inline;
     padding-right: 15px;
     padding-left: 15px;
-    
+
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #202020;
-    
+
     text-overflow: none;
 }
 
@@ -99,7 +99,7 @@ body
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    
+
     border: 1px solid #e5e5e5;
     background: white;
 }
@@ -127,7 +127,7 @@ h1
     height: 30px;
     margin-top: 2px;
     border: 1px solid #e5e5e5;
-    
+
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -143,7 +143,7 @@ h1
     margin-top: 2px;
     border: 1px solid #e5e5e5;
     resize: none;
-    
+
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -175,7 +175,7 @@ h1
     height: 30px;
     margin-top: 2px;
     border: 1px solid #e5e5e5;
-    
+
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -191,7 +191,7 @@ h1
     margin-top: 2px;
     border: 1px solid #e5e5e5;
     resize: none;
-    
+
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -208,7 +208,7 @@ h1
     width: 100px;
     height: 30px;
     transition: all 0.2s;
-    
+
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -241,7 +241,7 @@ h1
     width: 100px;
     height: 30px;
     transition: all 0.2s;
-    
+
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 16px;

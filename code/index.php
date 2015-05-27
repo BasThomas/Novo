@@ -1,9 +1,9 @@
-<?php 
+<?php
 	$pagetitle = 'Home';
     echo "<div class='homeheader'>";
-	include './parts/header.php'; 
+	include './parts/header.php';
     echo "</div>";
-	include './resources/functions.php'; 
+	include './resources/functions.php';
 ?>
 
 <!--<section class="container">-->
@@ -41,7 +41,7 @@
 								</div>
 							</li>';
 				}
-				
+
 				@mysqli_close($conn);
 			?>
 
