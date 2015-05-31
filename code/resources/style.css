@@ -142,7 +142,7 @@
         height: 3em;
 		top: 0;
 		width: 86.8%;
-		padding: 1em 6.6% 0;
+		padding: 10px 6.6%;
 		overflow: hidden;
         background-color: transparent;
 		color: #f1f1f1 !important;  
@@ -151,10 +151,10 @@
 	{
 		position: fixed;
 		z-index: 10000;
-        height: 60px;
+        height: 3em;
 		top: 0;
 		width: 86.8%;
-		padding: 1em 6.6% 10px;
+		padding: 10px 6.6%;
 		overflow: hidden;
         background-color: #252525;
 		color: #f1f1f1 !important;  
@@ -171,6 +171,8 @@
         font-size: 1em;
         top: 50%;
         transform: translateY(-50%);
+        -ms-transform: translateY(-50%); /* IE 9 */
+        -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
     }
     
     .nav li{
@@ -181,6 +183,10 @@
     .nav li a{
         text-decoration: none;
         color: #fff;
+    }
+
+    .menuicon{
+        display: none;
     }
 	
 	.notification
@@ -245,7 +251,8 @@
 	}
 
     .homeimage{
-        height: 100vh;   
+        height: 100vh;  
+        background-position: 50% 0;
     }
 	
 	.bannertitlebox
@@ -271,6 +278,8 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        -ms-transform: translateY(-50%); /* IE 9 */
+        -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
     }
 	
     .homelink{
@@ -830,14 +839,177 @@
 		.navbar
 		{
 			height: 50px;
+            overflow: visible !important;
 		}
+        
+        .nav{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 5em 3em 3em;
+            width: calc(100% - 6em);
+            height: 100vh;
+            z-index: 9999;
+            transform: none;
+            background-color: rgba(0,0,0,0.8);
+            display: none;
+            transform: none;
+            -ms-transform: none; /* IE 9 */
+            -webkit-transform: none; /* Chrome, Safari, Opera */
+        }
+        
+        .nav li{
+            padding: 0;
+            float: none;
+            margin-bottom: 1em;
+            font-size: 2em;
+            border: 1px solid #fff;
+        }
+        
+        .nav li a{
+            display: block;
+            padding: 1em;
+            background-color: #000;
+        }
+        
+        .nav li a:active{
+            background-color: #fff;   
+            color: #000;
+        }
+        
+        .menuicon{
+            display: inline-block;
+            float: right;
+            z-index: 9999;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            -ms-transform: translateY(-50%); /* IE 9 */
+            -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
+        }
+        
+/* ------------------ MENUICON ----------------------*/
+        
+.cmn-toggle-switch {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 39px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
 
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  right: 0px;
+  height: 6px;
+  background: white;
+}
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  content: "";
+}
+
+.cmn-toggle-switch span::before {
+  top: -15px;
+}
+
+.cmn-toggle-switch span::after {
+  bottom: -15px;
+}
+        
+.cmn-toggle-switch__htx {
+  background-color: transparent;
+}
+
+.cmn-toggle-switch__htx span {
+  -webkit-transition: background 0s 0.3s;
+          transition: background 0s 0.3s;
+}
+
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s;
+}
+
+.cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform;
+}
+
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.cmn-toggle-switch__htx.active {
+/*  background-color: #cb0032;*/
+}
+
+.cmn-toggle-switch__htx.active span {
+  background: none;
+}
+
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0s, 0.3s;
+          transition-delay: 0s, 0.3s;
+}
+        
+/* ------------------ MENUICON END ----------------------*/
+
+/*
 		.navbutton
 		{
 			height: 70px;
 			width: 70px;
 			background-size: 35px;
 		}
+*/
 
 		.navlogo
 		{
