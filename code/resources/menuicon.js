@@ -4,6 +4,12 @@ $(document).ready(function(){
         $(".nav").slideToggle();
     });
     
+    $(window).resize(function() {
+        if($(window).width() > '480') {
+            $(".nav").removeAttr('style');
+        }
+    });
+    
     
     (function() {
 
